@@ -1,0 +1,54 @@
+Pole ako dátová štruktúra je implementované pomocou niekoľkých tried.
+Dedičnosť je realizovaná v nasledujúcom poradí: 
+ArrayBase -> ArrayUtils -> ArraySorting -> ArrayFileIO -> ArrayAdvanced -> ArrayFull. 
+Vytvorenie objektu je možné len z triedy ArrayFull, ktorá funguje ako 
+hlavná „ štruktúra poľa“. Je možné vytvoriť pole nasledujúcich typov: 
+Integer, Float, Double, Long, Char. 
+Špecifické metódy však nemusia podporovať všetky typy.
+
+Trieda ArrayBase implementuje metódy:
+    push (pridá prvok na koniec poľa)
+    unshift (pridá prvok na začiatok poľa)
+    pop (odstráni posledný prvok z poľa)
+    shift (odstráni prvý prvok z poľa)
+    getElementAt (vráti prvok na zadanom indexe)
+
+ArrayUtils:
+    find (nájde prvý prvok v poli zodpovedajúci parametru value)
+    findMax (vráti najväčší prvok v poli)
+    findMin (vráti najmenší prvok v poli)
+    reverse (otočí poradie prvkov v poli)
+    removeDuplicates (odstráni duplicitné prvky z poľa)
+
+ArraySorting:
+    quickSort (zoradí pole pomocou algoritmu quicksort)
+
+ArrayFileIO:
+    exportToFile (uloží pole do súboru)
+    importFromFile (načíta pole zo súboru)
+
+ArrayAdvanced:
+    subArray (vráti podpole z poľa v danom rozsahu)
+    swap (vymení hodnoty dvoch prvkov v poli)
+    removeByIndex (odstráni prvok na danom indexe)
+    intersect (vráti priesečník dvoch polí)
+    maxSubarray (nájde maximálne podpole v poli)
+    merge (spojí dve polia do jedného)
+    forEach (aplikuje funkciu na každý prvok poľa)
+    map (vytvorí nové pole aplikovaním funkcie na každý prvok)
+
+ArrayFull:
+    základné konštruktory (konstruktory na vytvorenie poľa)
+    konštruktory kopírovania a presunu (kopíruje alebo presúva pole do nového objektu)
+    operátor priradenia (umožňuje priradenie hodnôt medzi poľami)
+    operátor indexu (umožňuje prístup k prvkom poľa pomocou indexu)
+    merge a intersect (to isté ale jedným z ich parametrov je inštancia triedy ArrayFull)
+
+A pomocou inštancie triedy ArrayFull môžete použiť akúkoľvek metódu implementovanú
+vo vyššie uvedených triedach.
+Všetky metódy sú testované tiež s ArrayFull.
+
+Teším sa na vaše komentáre a pripomienky k tomuto projektu a vopred vám ďakujem.
+Neprikladám priečinok, ktorý obsahuje GoogleTests, pretože zaberá viac ako 2M pamäte.
+S pozdravom
+Anastasiia Honcharenko
